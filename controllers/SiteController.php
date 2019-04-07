@@ -136,4 +136,14 @@ class SiteController extends Controller
     {
         return $this->render('rphistorico');
     }
+
+    public function actionCaptucargo()
+    {
+        return $this->render('captucargo');
+    }
+
+    public function actionCaptuHV()
+    {
+        return $this->render('captuhv');
+    }
 }
