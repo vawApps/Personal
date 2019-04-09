@@ -1,18 +1,12 @@
 <?php
+	use yii\helpers\Html;
+	use app\assets\AppAsset;
+	use yii\bootstrap\ActiveForm;
+	use yii\bootstrap\Alert;
+	use yii\helpers\Url;
+	use app\models\Aspirantes;
 
-/* @var $this yii\web\View */
+	$fn_apirante = new Aspirantes;
+    $resultado = $fn_apirante->Consultar_Registro_P(1,1);
 
-use yii\helpers\Html;
-
-$this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
-?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
-
-    <code><?= __FILE__ ?></code>
-</div>
+    var_dump($resultado);

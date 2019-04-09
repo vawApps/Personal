@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FBFCB4BC-2E16-C42C-D82F-56C3057FF01E" containerWithKeyObject="3663286B-3DCF-0EA5-4369-8DBE9E5D9A0F" localFKIndex="4120C9D8-8B72-EEAF-322E-427F8D7CE10B" name="ASPIRANTE_FORMULARIO_PRUEBA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 18:00:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>FORMULARIO_PRUEBA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4D33580F-E908-A6B1-4E0D-A1793ACD25F4</referredTableID>
+<keyObject>9239BF39-118A-D41D-DBD9-7A1DDC031F95</keyObject>
+<referredKeyID>9239BF39-118A-D41D-DBD9-7A1DDC031F95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

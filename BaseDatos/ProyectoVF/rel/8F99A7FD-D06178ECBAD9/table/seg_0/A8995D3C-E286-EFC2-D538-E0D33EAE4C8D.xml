@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8995D3C-E286-EFC2-D538-E0D33EAE4C8D" name="PROFESIONES">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:53:14 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PROFESION" id="49AABCF1-8DF4-5C62-F7F4-708C2DA6C0D7">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:54:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="EDC144E2-ED5A-F4C3-F3B9-DE2997547A3D">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:54:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="9A47D91C-B8C7-E0C1-3855-B638AC55B849">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:54:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1DDCA00-5E11-D278-C163-E0A983FCEE74" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91CE5431-D580-C659-02AD-BA31BE5CEB08" name="PROFESIONES_PK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:54:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AABCF1-8DF4-5C62-F7F4-708C2DA6C0D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A71BF4F-8EA9-983B-5BAA-969C5A16C40F" name="TABLE_16_EMPRESA_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:54:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A47D91C-B8C7-E0C1-3855-B638AC55B849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

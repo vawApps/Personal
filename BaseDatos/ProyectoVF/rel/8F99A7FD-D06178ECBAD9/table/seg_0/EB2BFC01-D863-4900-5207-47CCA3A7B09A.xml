@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB2BFC01-D863-4900-5207-47CCA3A7B09A" name="HABILIDADES_ASPIRANTE">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:00:16 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="1B718BC6-D2D7-0F51-A4D3-46D8A6FC7654">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENTO" id="F0DFFF35-205D-6788-31DF-FB6FAFA62FF6">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A51E54F-C27B-C577-2BA9-88994CA0AC38" referredColumn="116A39DB-005F-E54C-C716-E4D6AD7CAB86"/>
+</associations>
+</Column>
+<Column name="HABILIDAD" id="7E429B57-885F-272B-37B5-13A13DCBEF4B">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03A29BA4-99B3-71C9-A7FB-7D61995C676C" referredColumn="418FE07B-A88B-4F4D-EAB3-CFDEA075B394"/>
+</associations>
+</Column>
+<Column name="COD_EMPRESA" id="1747EE43-5B6A-AE1D-FC87-6998349013DC">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:26:29 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9314F461-873E-9092-4DB3-EB75DFC6EAFE" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09D81AAC-A1F6-34F0-305C-796A7D86798C" name="HABILIDADES_ASPIRANTE_PK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B718BC6-D2D7-0F51-A4D3-46D8A6FC7654"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E74C681-73F2-034E-E7AB-6F04C0311622" name="TABLE_6_ASPIRANTE_FK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0DFFF35-205D-6788-31DF-FB6FAFA62FF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A43B3F83-91C9-2328-D26D-62DB6BAD092E" name="TABLE_6_HABILIDADES_FK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E429B57-885F-272B-37B5-13A13DCBEF4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B0E71F2-5016-DD7A-9F3B-51FC1C84C8F7" name="HABILIDADES_ASP_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:26:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1747EE43-5B6A-AE1D-FC87-6998349013DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

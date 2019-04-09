@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A00CAA66-E8F0-6D21-8DC3-47644AC994FA" name="CARGOS">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-27 17:20:03 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="CD646A6D-2E81-AAA0-662B-6D60668E3033">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-27 17:21:02 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="09B83E84-5DA5-0C92-1361-96DD75DB55D0">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-27 17:21:02 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="79BA7C1B-0229-3841-2741-91EA8FCB0619">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:30:07 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09F8FB61-5F3F-351C-CC51-6BA315BEF224" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23FB1BB3-240F-DDC5-0162-3533263A248F" name="CARGOS_PK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-27 17:21:02 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD646A6D-2E81-AAA0-662B-6D60668E3033"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13668D06-0935-65DE-4557-C9B7F9B1C4B6" name="CARGOS_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:30:07 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79BA7C1B-0229-3841-2741-91EA8FCB0619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

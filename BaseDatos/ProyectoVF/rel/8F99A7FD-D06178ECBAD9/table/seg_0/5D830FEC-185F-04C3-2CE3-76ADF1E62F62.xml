@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D830FEC-185F-04C3-2CE3-76ADF1E62F62" name="DEPARTAMENTOS">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:04:08 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="8355E401-FC43-8872-5DC6-2782DF802072">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:05:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="1CE0A672-C05B-7B39-5465-0D52F93219B6">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:05:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="4A31DA40-9403-8438-DCDB-103D041C91C8">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-09-18 23:36:05 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PADRE" id="35952DD7-76EA-69EC-293E-794EB1D83B77">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:05:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FD9A55D-B9B4-71B9-4465-4E5B553CCE29" name="DEPARTAMENTOS_PK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:05:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8355E401-FC43-8872-5DC6-2782DF802072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99E1AD98-A8B9-3694-F08F-22B7573214C0" name="ASPIRANTE_EXPERIENCIA">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:49:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="8DBD091C-0BDD-4C63-ECAE-0C19937BE6F5">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENTO" id="E784709A-8A75-9A90-1D0F-0AFEC4299DE4">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29E6C5AB-2DC9-F857-3F16-B1DC2A194D4F" referredColumn="116A39DB-005F-E54C-C716-E4D6AD7CAB86"/>
+</associations>
+</Column>
+<Column name="EMPRESA" id="FBC6B376-8D68-461D-5B6E-D1D5A988BC08">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARGO" id="4BAD730B-81A8-8727-8703-55CED8EECDCC">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="BB016750-DBA9-06E6-8F31-3AB544D4B780">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="1ED6F9C6-B18C-FDBA-9995-314CD4C4EC26">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="A5BDDB97-4A48-ECD2-9586-A2133C483CF5">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:25:12 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAC57961-B2C8-73A3-9D75-CB99C804666C" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F16859AD-2308-8FA5-58D9-244E27981C3C" name="ASPIRANTE_PROFESION_PK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DBD091C-0BDD-4C63-ECAE-0C19937BE6F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC80C612-2E11-48C0-6A8F-FA4A5C6CE08F" name="TABLE_4_ASPIRANTE_FK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:53:40 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E784709A-8A75-9A90-1D0F-0AFEC4299DE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BE38890-C316-EC2F-B3AA-3BBFF4F1F02F" name="ASPIRANTE_EXP_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:25:12 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5BDDB97-4A48-ECD2-9586-A2133C483CF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

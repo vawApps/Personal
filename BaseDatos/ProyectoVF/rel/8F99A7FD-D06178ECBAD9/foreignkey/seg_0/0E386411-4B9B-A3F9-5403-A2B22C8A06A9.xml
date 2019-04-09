@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E386411-4B9B-A3F9-5403-A2B22C8A06A9" containerWithKeyObject="3663286B-3DCF-0EA5-4369-8DBE9E5D9A0F" localFKIndex="D4278FE1-C5B0-EE26-F952-DE4592818A5F" name="ASPIRANTE_DEPARTAMENTOS_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:08:53 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>DEPARTAMENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5D830FEC-185F-04C3-2CE3-76ADF1E62F62</referredTableID>
+<keyObject>1FD9A55D-B9B4-71B9-4465-4E5B553CCE29</keyObject>
+<referredKeyID>1FD9A55D-B9B4-71B9-4465-4E5B553CCE29</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
