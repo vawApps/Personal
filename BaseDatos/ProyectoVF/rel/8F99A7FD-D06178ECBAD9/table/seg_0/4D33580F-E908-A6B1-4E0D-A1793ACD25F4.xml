@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D33580F-E908-A6B1-4E0D-A1793ACD25F4" name="FORMULARIO_PRUEBA">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:53:46 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="168EDEE0-7840-B218-85FE-5ED5CD2F61DD">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 18:01:19 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESCALA" id="80B0E04E-B6AC-1590-2A2E-B9AE4702FAB1">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:55:19 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFCCC49F-105C-9DD3-5A44-25DFAC910B61" referredColumn="2B12AFA2-6F22-FCA6-1A98-C2D3B0A02182"/>
+</associations>
+</Column>
+<Column name="TIPO_PRUEBA" id="C26750D9-0E19-FDA1-E704-F438EEAED8DF">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-09 17:14:33 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80C52DFF-8779-B0B7-B42D-4D367FF08ADB" referredColumn="7FB00BFC-0844-CB56-91AF-AB03054252A7"/>
+</associations>
+</Column>
+<Column name="CALIFICACION" id="1B5CBC71-49F0-8F72-E2AE-53D2149C8DCF">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-09 17:16:38 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="70EFB692-ECDD-595D-0C73-E338827E4A8A">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:33:20 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DFAE665-C7FB-FA2D-B4C7-85451CCCA195" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9239BF39-118A-D41D-DBD9-7A1DDC031F95" name="FORMULARIO_PRUEBA_PK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:55:19 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="168EDEE0-7840-B218-85FE-5ED5CD2F61DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AC6D718-FD24-CAAB-D765-C543D909558B" name="FORMULARIO_PRUEBA_ESCALA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 18:02:07 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80B0E04E-B6AC-1590-2A2E-B9AE4702FAB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83EDB0A5-2A2E-FBD8-1FE8-6C560BB5F9F6" name="FOR_PRUEBA_TIPO_PRUEBA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-09 17:21:38 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C26750D9-0E19-FDA1-E704-F438EEAED8DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65D973B6-A5B8-8E89-1B0F-DFAE4937D960" name="FOR_PRUEBA_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:33:20 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70EFB692-ECDD-595D-0C73-E338827E4A8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

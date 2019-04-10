@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A8890A7-B1A6-0B39-0584-FC4B07BC94A4" name="ESCALA">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:55:25 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="2B12AFA2-6F22-FCA6-1A98-C2D3B0A02182">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:56:22 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="00436689-E2E6-291E-1E07-8C4F1E031513">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:56:22 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="638DC1E7-D723-51AC-DB7C-A139AF7F2873">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:32:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECD91999-7602-E793-0922-CC4C97401D70" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EAB115A-C015-361F-BC3D-89A37C085046" name="ESCALA_PK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 17:56:22 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B12AFA2-6F22-FCA6-1A98-C2D3B0A02182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B612BF6-EE43-7C3C-FB12-B98921230372" name="ESCALA_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:32:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="638DC1E7-D723-51AC-DB7C-A139AF7F2873"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

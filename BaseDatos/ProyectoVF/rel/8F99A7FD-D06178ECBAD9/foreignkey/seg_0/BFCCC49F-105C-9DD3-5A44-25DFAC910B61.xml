@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BFCCC49F-105C-9DD3-5A44-25DFAC910B61" containerWithKeyObject="4D33580F-E908-A6B1-4E0D-A1793ACD25F4" localFKIndex="6AC6D718-FD24-CAAB-D765-C543D909558B" name="FORMULARIO_PRUEBA_ESCALA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-04 18:02:07 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>ESCALA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0A8890A7-B1A6-0B39-0584-FC4B07BC94A4</referredTableID>
+<keyObject>9EAB115A-C015-361F-BC3D-89A37C085046</keyObject>
+<referredKeyID>9EAB115A-C015-361F-BC3D-89A37C085046</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

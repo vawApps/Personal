@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="49409D51-60C6-7C6F-F06C-2826417F686D" containerWithKeyObject="95CABD0E-62EF-9482-D837-465F2E989DA4" localFKIndex="DEBB49F0-F2C8-5EB4-01A0-37A4E9DE03BD" name="VACANTES_DEPARTAMENTOS_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:17:41 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>DEPARTAMENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5D830FEC-185F-04C3-2CE3-76ADF1E62F62</referredTableID>
+<keyObject>1FD9A55D-B9B4-71B9-4465-4E5B553CCE29</keyObject>
+<referredKeyID>1FD9A55D-B9B4-71B9-4465-4E5B553CCE29</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

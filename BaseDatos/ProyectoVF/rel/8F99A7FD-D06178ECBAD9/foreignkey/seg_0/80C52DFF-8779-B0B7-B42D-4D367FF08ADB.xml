@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="80C52DFF-8779-B0B7-B42D-4D367FF08ADB" containerWithKeyObject="4D33580F-E908-A6B1-4E0D-A1793ACD25F4" localFKIndex="83EDB0A5-2A2E-FBD8-1FE8-6C560BB5F9F6" name="FOR_PRUEBA_TIPO_PRUEBA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-07-09 17:21:38 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>TIPO_DE_PRUEBA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>19796E15-CD94-6047-1B40-04F5026F68F9</referredTableID>
+<keyObject>D036609A-6599-3DD3-145D-AE83ABA8D84B</keyObject>
+<referredKeyID>D036609A-6599-3DD3-145D-AE83ABA8D84B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_PRUEBA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E07C18CD-CB30-0BDC-1D82-BB725B5E7547" name="USUARIO">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-08 17:54:29 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_USUARIO" id="5E5D0464-5D39-AEA7-FAEF-84BD39141EBC">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-09-13 23:23:53 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENTO" id="33BB8EB3-4C4E-8CAB-ED91-DA792D33CD4D">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-08 17:57:01 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="022CDDE4-6FD8-A059-0946-1E9783FD0C34" referredColumn="116A39DB-005F-E54C-C716-E4D6AD7CAB86"/>
+</associations>
+</Column>
+<Column name="NOMBRE_USUARIO" id="69B50247-E919-44F8-D862-C313DBAFB81C">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-08 17:57:01 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRASENA" id="58BF8F4A-8405-C535-1188-459F3817C1BC">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-08 17:57:01 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PERFIL" id="76F530A0-AAE6-7379-2058-1ED4762CFFF4">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-09-13 23:30:20 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA38DAED-DA2D-9D54-C7F2-2E34CD30861F" referredColumn="9C85D2EA-BC5B-0673-9553-328DE6A5EE15"/>
+</associations>
+</Column>
+<Column name="ESTADO" id="A373753F-3C5F-2880-167E-50FEC5EF54F9">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:40:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="AEBCC0A8-7DFA-1F56-3197-60653C4B57B7">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:31:35 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B423AAD-D123-EE18-CF19-5C0B618CC909" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA678769-656A-F0BD-060A-8CFD6A29268A" name="USUARIO_PK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-08 17:57:01 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E5D0464-5D39-AEA7-FAEF-84BD39141EBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="674EC96F-61FB-3C29-E679-B7FD333B0653" name="USUARIO_ASPIRANTE_FKv1">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:31:35 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEBCC0A8-7DFA-1F56-3197-60653C4B57B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCBBD097-C2E3-EBFD-44B9-5EF215D31E4B" name="USUARIO_ASPIRANTE_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-09-13 23:24:29 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33BB8EB3-4C4E-8CAB-ED91-DA792D33CD4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CA88973-2EB7-2D9E-41AD-E8DB358DF691" name="USUARIO_PERFIL_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-09-13 23:30:39 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76F530A0-AAE6-7379-2058-1ED4762CFFF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,389 @@
+-- Generado por Oracle SQL Developer Data Modeler 4.2.0.932
+--   en:        2019-04-07 23:52:08 COT
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+CREATE TABLE aspirante (
+    documento                  VARCHAR2(20) NOT NULL,
+    tipo_documento             VARCHAR2(3) NOT NULL,
+    nombre                     VARCHAR2(20),
+    apellido                   VARCHAR2(60),
+    genero                     VARCHAR2(2) NOT NULL,
+    fecha_nacimiento           DATE,
+    direccion                  VARCHAR2(30),
+    telefono                   VARCHAR2(15),
+    celular                    VARCHAR2(20),
+    estado_civil               VARCHAR2(20),
+    correo_electronico         VARCHAR2(60),
+    discapacidad               VARCHAR2(1),
+    salario_aspira             NUMBER(10),
+    profesion                  NUMBER(3) NOT NULL,
+    viaja                      VARCHAR2(1),
+    fecha_inscripcion          DATE,
+    codigo_vacante             NUMBER(3) NOT NULL,
+    codigo_formulario          NUMBER(3) NOT NULL,
+    profesion_complemento      NUMBER(3) NOT NULL,
+    formulario_prueba_codigo   NUMBER(3) NOT NULL,
+    ciud_naci                  NUMBER(4) NOT NULL,
+    ciud_actual                NUMBER(4) NOT NULL,
+    cod_empresa                NUMBER(4) NOT NULL
+);
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_pk PRIMARY KEY ( documento );
+
+CREATE TABLE aspirante_estudios (
+    codigo           NUMBER(4) NOT NULL,
+    documento        VARCHAR2(15) NOT NULL,
+    universidad      VARCHAR2(30),
+    profesion        VARCHAR2(30),
+    fecha_inicio     DATE,
+    fecha_fin        DATE,
+    estado_estudio   VARCHAR2(20),
+    idioma           VARCHAR2(30),
+    nivel_idioma     VARCHAR2(30),
+    cod_ciudad       NUMBER(4) NOT NULL,
+    cod_empresa      NUMBER(10) NOT NULL
+);
+
+ALTER TABLE aspirante_estudios ADD CONSTRAINT aspirante_estudios_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE aspirante_experiencia (
+    codigo         NUMBER(4) NOT NULL,
+    documento      VARCHAR2(20) NOT NULL,
+    empresa        VARCHAR2(30),
+    cargo          VARCHAR2(30),
+    fecha_inicio   DATE,
+    fecha_fin      DATE,
+    cod_empresa    NUMBER(10) NOT NULL
+);
+
+ALTER TABLE aspirante_experiencia ADD CONSTRAINT aspirante_profesion_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE cargos (
+    codigo        VARCHAR2(4) NOT NULL,
+    descripcion   VARCHAR2(60),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE cargos ADD CONSTRAINT cargos_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE contacto (
+    codigo              NUMBER NOT NULL,
+    cod_vacante         NUMBER(4) NOT NULL,
+    contacto            VARCHAR2(60),
+    correo_contacto     VARCHAR2(60),
+    recibe_hv_correo    VARCHAR2(1),
+    telefono_contacto   NUMBER(10),
+    fecha_entrevista    DATE,
+    lugar_entrevista    VARCHAR2(500),
+    cod_empresa         NUMBER(10) NOT NULL
+);
+
+ALTER TABLE contacto ADD CONSTRAINT contacto_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE departamentos (
+    codigo        NUMBER(4) NOT NULL,
+    descripcion   VARCHAR2(100),
+    tipo          VARCHAR2(1) NOT NULL,
+    cod_padre     NUMBER(4)
+);
+
+ALTER TABLE departamentos ADD CONSTRAINT departamentos_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE empresa (
+    cod_empresa      NUMBER(10) NOT NULL,
+    nit_empresa      NUMBER(20) NOT NULL,
+    nombre_empresa   VARCHAR2(60),
+    estado           VARCHAR2(1)
+);
+
+ALTER TABLE empresa ADD CONSTRAINT empresa_pk PRIMARY KEY ( cod_empresa );
+
+CREATE TABLE escala (
+    codigo        NUMBER NOT NULL,
+    descripcion   VARCHAR2(20),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE escala ADD CONSTRAINT escala_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE formulario_prueba (
+    codigo         NUMBER(3) NOT NULL,
+    escala         NUMBER(1) NOT NULL,
+    tipo_prueba    NUMBER(2) NOT NULL,
+    calificacion   NUMBER(3),
+    cod_empresa    NUMBER(10) NOT NULL
+);
+
+ALTER TABLE formulario_prueba ADD CONSTRAINT formulario_prueba_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE genero (
+    codigo        VARCHAR2(2) NOT NULL,
+    descripcion   VARCHAR2(25),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE genero ADD CONSTRAINT genero_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE habilidades (
+    codigo        VARCHAR2(4) NOT NULL,
+    descripcion   VARCHAR2(30) NOT NULL,
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE habilidades ADD CONSTRAINT habilidades_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE habilidades_aspirante (
+    codigo        NUMBER(4) NOT NULL,
+    documento     VARCHAR2(15) NOT NULL,
+    habilidad     VARCHAR2(4) NOT NULL,
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE habilidades_aspirante ADD CONSTRAINT habilidades_aspirante_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE perfil (
+    cod_perfil    VARCHAR2(10) NOT NULL,
+    tipo_perfil   VARCHAR2(20),
+    descripcion   VARCHAR2(60),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE perfil ADD CONSTRAINT perfil_pk PRIMARY KEY ( cod_perfil );
+
+CREATE TABLE profesion_detalle (
+    cod_prodeta     NUMBER(3) NOT NULL,
+    cod_profesion   NUMBER(4) NOT NULL,
+    descripcion     VARCHAR2(80),
+    cod_empresa     NUMBER(10) NOT NULL
+);
+
+ALTER TABLE profesion_detalle ADD CONSTRAINT profesion_detalle_pk PRIMARY KEY ( cod_prodeta );
+
+CREATE TABLE profesiones (
+    cod_profesion   NUMBER(3) NOT NULL,
+    descripcion     VARCHAR2(80),
+    cod_empresa     NUMBER(10) NOT NULL
+);
+
+ALTER TABLE profesiones ADD CONSTRAINT profesiones_pk PRIMARY KEY ( cod_profesion );
+
+CREATE TABLE tipo_de_prueba (
+    cod_prueba    NUMBER(3) NOT NULL,
+    descripcion   VARCHAR2(100),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE tipo_de_prueba ADD CONSTRAINT "TIPO_DE PRUEBA_PK" PRIMARY KEY ( cod_prueba );
+
+CREATE TABLE tipo_documento (
+    codigo        VARCHAR2(4) NOT NULL,
+    descripcion   VARCHAR2(60),
+    cod_empresa   NUMBER(10) NOT NULL
+);
+
+ALTER TABLE tipo_documento ADD CONSTRAINT tipo_documento_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE usuario (
+    cod_usuario      VARCHAR2(10) NOT NULL,
+    documento        VARCHAR2(20) NOT NULL,
+    nombre_usuario   VARCHAR2(20),
+    contrasena       VARCHAR2(20),
+    cod_perfil       VARCHAR2(10) NOT NULL,
+    estado           VARCHAR2(1),
+    cod_empresa      NUMBER(10) NOT NULL
+);
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( cod_usuario );
+
+CREATE TABLE vacantes (
+    codigo                  NUMBER(4) NOT NULL,
+    codigo_cargo            VARCHAR2(4) NOT NULL,
+    fecha_inicial           DATE,
+    fecha_final             DATE,
+    descri_vacante          LONG,
+    habilidades_req         NUMBER(3),
+    acti_realiza            VARCHAR2(1000),
+    jornada_laboral         VARCHAR2(300),
+    tipo_empleo             VARCHAR2(100),
+    rango_salarial          VARCHAR2(100),
+    cantidad_vacante        NUMBER,
+    experiencia_minima      VARCHAR2(60),
+    idioma_requerido        VARCHAR2(50),
+    nivel_estudio           VARCHAR2(100),
+    disponible_viaje        VARCHAR2(1),
+    acepta_discapacidad     VARCHAR2(1),
+    cod_ciudad              NUMBER(4) NOT NULL,
+    estado                  VARCHAR2(1),
+    profesion               NUMBER(3) NOT NULL,
+    profesion_complemento   NUMBER(3) NOT NULL,
+    cod_empresa             NUMBER(10) NOT NULL
+);
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_pk PRIMARY KEY ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_departamentos_fk FOREIGN KEY ( ciud_naci )
+    REFERENCES departamentos ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_departamentos_fkv2 FOREIGN KEY ( ciud_actual )
+    REFERENCES departamentos ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE aspirante_estudios ADD CONSTRAINT aspirante_est_depts_fk FOREIGN KEY ( cod_ciudad )
+    REFERENCES departamentos ( codigo );
+
+ALTER TABLE aspirante_estudios ADD CONSTRAINT aspirante_estudios_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE aspirante_experiencia ADD CONSTRAINT aspirante_exp_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_formulario_prueba_fk FOREIGN KEY ( formulario_prueba_codigo )
+    REFERENCES formulario_prueba ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_genero_fk FOREIGN KEY ( genero )
+    REFERENCES genero ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_profesion_detalle_fk FOREIGN KEY ( profesion_complemento )
+    REFERENCES profesion_detalle ( cod_prodeta );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_profesiones_fk FOREIGN KEY ( profesion )
+    REFERENCES profesiones ( cod_profesion );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_tipo_documento_fk FOREIGN KEY ( tipo_documento )
+    REFERENCES tipo_documento ( codigo );
+
+ALTER TABLE aspirante ADD CONSTRAINT aspirante_vacantes_fk FOREIGN KEY ( codigo_vacante )
+    REFERENCES vacantes ( codigo );
+
+ALTER TABLE cargos ADD CONSTRAINT cargos_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE escala ADD CONSTRAINT escala_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE formulario_prueba ADD CONSTRAINT for_prueba_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE formulario_prueba ADD CONSTRAINT for_prueba_tipo_prueba_fk FOREIGN KEY ( tipo_prueba )
+    REFERENCES tipo_de_prueba ( cod_prueba );
+
+ALTER TABLE formulario_prueba ADD CONSTRAINT formulario_prueba_escala_fk FOREIGN KEY ( escala )
+    REFERENCES escala ( codigo );
+
+ALTER TABLE genero ADD CONSTRAINT genero_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE habilidades_aspirante ADD CONSTRAINT habilidades_asp_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE habilidades ADD CONSTRAINT habilidades_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE perfil ADD CONSTRAINT perfil_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE profesiones ADD CONSTRAINT table_16_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE profesion_detalle ADD CONSTRAINT table_17_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE profesion_detalle ADD CONSTRAINT table_17_profesiones_fk FOREIGN KEY ( cod_profesion )
+    REFERENCES profesiones ( cod_profesion );
+
+ALTER TABLE contacto ADD CONSTRAINT table_21_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE contacto ADD CONSTRAINT table_21_vacantes_fk FOREIGN KEY ( cod_vacante )
+    REFERENCES vacantes ( codigo );
+
+ALTER TABLE aspirante_experiencia ADD CONSTRAINT table_4_aspirante_fk FOREIGN KEY ( documento )
+    REFERENCES aspirante ( documento );
+
+ALTER TABLE habilidades_aspirante ADD CONSTRAINT table_6_aspirante_fk FOREIGN KEY ( documento )
+    REFERENCES aspirante ( documento );
+
+ALTER TABLE habilidades_aspirante ADD CONSTRAINT table_6_habilidades_fk FOREIGN KEY ( habilidad )
+    REFERENCES habilidades ( codigo );
+
+ALTER TABLE aspirante_estudios ADD CONSTRAINT table_7_aspirante_fk FOREIGN KEY ( documento )
+    REFERENCES aspirante ( documento );
+
+ALTER TABLE tipo_de_prueba ADD CONSTRAINT "TIPO_DE PRUEBA_EMPRESA_FK" FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE tipo_documento ADD CONSTRAINT tipo_documento_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_aspirante_fk FOREIGN KEY ( documento )
+    REFERENCES aspirante ( documento );
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_aspirante_fkv1 FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_perfil_fk FOREIGN KEY ( cod_perfil )
+    REFERENCES perfil ( cod_perfil );
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_cargos_fk FOREIGN KEY ( codigo_cargo )
+    REFERENCES cargos ( codigo );
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_departamentos_fk FOREIGN KEY ( cod_ciudad )
+    REFERENCES departamentos ( codigo );
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_empresa_fk FOREIGN KEY ( cod_empresa )
+    REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_profesion_detalle_fk FOREIGN KEY ( profesion_complemento )
+    REFERENCES profesion_detalle ( cod_prodeta );
+
+ALTER TABLE vacantes ADD CONSTRAINT vacantes_profesiones_fk FOREIGN KEY ( profesion )
+    REFERENCES profesiones ( cod_profesion );
+
+
+
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            19
+-- CREATE INDEX                             0
+-- ALTER TABLE                             59
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

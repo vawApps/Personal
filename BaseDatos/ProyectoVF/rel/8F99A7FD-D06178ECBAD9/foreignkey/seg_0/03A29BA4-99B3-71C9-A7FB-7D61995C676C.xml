@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="03A29BA4-99B3-71C9-A7FB-7D61995C676C" containerWithKeyObject="EB2BFC01-D863-4900-5207-47CCA3A7B09A" localFKIndex="A43B3F83-91C9-2328-D26D-62DB6BAD092E" name="TABLE_6_HABILIDADES_FK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:01:48 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<referredTableLongName>HABILIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C4F5797-DA8D-D85E-22A5-3E0ED1427779</referredTableID>
+<keyObject>8D3AF16F-E32C-2F21-0248-FD9FE4C488BB</keyObject>
+<referredKeyID>8D3AF16F-E32C-2F21-0248-FD9FE4C488BB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

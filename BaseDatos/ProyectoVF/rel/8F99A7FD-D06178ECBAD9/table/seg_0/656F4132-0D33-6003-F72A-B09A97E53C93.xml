@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="656F4132-0D33-6003-F72A-B09A97E53C93" name="CONTACTO">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:18:57 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="C8D7199E-FF72-03BC-69C7-8616493C66D6">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_VACANTE" id="AFD0C419-A33D-2688-7558-E7633FE50BAB">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0069CDF-908F-43E9-FDD3-FA6E326C7D7D" referredColumn="6F9A06BE-A8DA-413C-3B74-E49EA13D2B47"/>
+</associations>
+</Column>
+<Column name="CONTACTO" id="1D905275-41F4-1078-78D1-3F70174BF3B2">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_CONTACTO" id="F789052E-88F9-3B6F-1698-A7C6AD3AB6C5">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECIBE_HV_CORREO" id="27B016B0-3FB6-E5BD-0477-F93138EB6240">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO_CONTACTO" id="78E26FF1-A315-D358-E8CC-060298460FC6">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENTREVISTA" id="95D3EEBD-AFF3-23B0-A5DE-21D7567D78F3">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LUGAR_ENTREVISTA" id="958A2905-8098-7099-8B52-E17DB0727265">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="30BB7B23-E3CD-B959-667B-22A58FAC16D5">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9852C29-7285-B920-DC59-61D46C06C9EE" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9A1247C-0B09-33D4-ADE2-B473C2AAB2EF" name="CONTACTO_PK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8D7199E-FF72-03BC-69C7-8616493C66D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB888F6C-F851-5D27-990D-939910E842F1" name="TABLE_21_VACANTES_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFD0C419-A33D-2688-7558-E7633FE50BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5D029ED-A2B2-6C1B-813F-4120637628B6" name="TABLE_21_EMPRESA_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:21:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30BB7B23-E3CD-B959-667B-22A58FAC16D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

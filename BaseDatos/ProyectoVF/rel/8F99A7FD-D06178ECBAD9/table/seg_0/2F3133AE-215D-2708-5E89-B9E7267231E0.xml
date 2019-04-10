@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F3133AE-215D-2708-5E89-B9E7267231E0" name="ASPIRANTE_ESTUDIOS">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:08:32 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="D7F602F1-9FB0-2092-624D-ED4E318A83B8">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENTO" id="D7E4A9AF-6F11-F12A-4E22-F8910CAF1B6C">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="186C27E9-5E8C-0ED9-BA84-8396754035FB" referredColumn="116A39DB-005F-E54C-C716-E4D6AD7CAB86"/>
+</associations>
+</Column>
+<Column name="UNIVERSIDAD" id="587349CA-D267-A99C-8609-384A380AA12D">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFESION" id="85C4D429-8D51-F37F-0057-E5CF3FEC43A8">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="FAA4A0F3-4D49-D984-1DB0-44346C1E82E9">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="D618BADA-169B-7F4F-4A4A-D245DF7EB693">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_ESTUDIO" id="811E7E25-C794-7495-89F7-511802BC409B">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:49:52 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDIOMA" id="1344253D-7E0A-8380-5947-A06565641738">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:49:52 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL_IDIOMA" id="561C85CF-FCB5-4637-3D62-6D3407F3E82E">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:49:52 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CIUDAD" id="DEED4C58-383B-DCC1-692C-1A5FF9593B01">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:07:23 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AECD3D57-7EAC-4B26-30F5-9F1291F9408F" referredColumn="8355E401-FC43-8872-5DC6-2782DF802072"/>
+</associations>
+</Column>
+<Column name="COD_EMPRESA" id="DDB78836-240B-64A2-8326-BF1F5A689B6D">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:24:25 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EF23C16-1F49-AAE3-857A-552C56A94063" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32FA4CF1-21C5-9C19-1674-CC445758DC29" name="ASPIRANTE_ESTUDIOS_PK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7F602F1-9FB0-2092-624D-ED4E318A83B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="490FE340-6ADA-9B0E-9176-9F0A2BA5C8E0" name="TABLE_7_ASPIRANTE_FK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 02:12:51 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7E4A9AF-6F11-F12A-4E22-F8910CAF1B6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8388347-D02E-83C2-8BB4-E8600252157B" name="ASPIRANTE_ESTUDIOS_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:24:25 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDB78836-240B-64A2-8326-BF1F5A689B6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D56B6B38-4825-B645-CFC8-A85DF51F22F9" name="ASPIRANTE_EST_DEPTS_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:07:23 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEED4C58-383B-DCC1-692C-1A5FF9593B01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

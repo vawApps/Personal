@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D6F99E8-E210-F79E-6F8B-02968ABC4D07" name="GENERO">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:19:37 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO" id="4790D52E-E470-4F0E-2B32-C1D9A3000456">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:20:23 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="30B7328A-5BD5-BB55-6CAC-D44DB2F0DE36">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:20:23 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="1FD8EC9C-426C-8185-2F01-5146CF2A0FAE">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:31:05 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13592825-295D-AAB2-5371-F1383FE5FC9D" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="820A3044-6A7F-4615-782D-1DAEBDF012DA" name="GENERO_PK">
+<createdBy>EnriqueCQ</createdBy>
+<createdTime>2018-05-24 01:20:23 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4790D52E-E470-4F0E-2B32-C1D9A3000456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4D2872B-1F8E-CEB8-FFB0-543B8C54513D" name="GENERO_EMPRESA_FK">
+<createdBy>Jorge Lopez</createdBy>
+<createdTime>2018-08-11 20:31:05 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FD8EC9C-426C-8185-2F01-5146CF2A0FAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

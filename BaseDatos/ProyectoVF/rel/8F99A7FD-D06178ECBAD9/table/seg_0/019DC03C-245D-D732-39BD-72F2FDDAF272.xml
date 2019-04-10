@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="019DC03C-245D-D732-39BD-72F2FDDAF272" name="PROFESION_DETALLE">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:55:29 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PRODETA" id="8E4C517F-4377-F5C2-B64A-286AB12DEEE7">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PROFESION" id="2D028BD8-D3A8-D1C5-24C3-8D091882456E">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B85AD8A4-F105-3DE6-A442-77500E7129B3" referredColumn="49AABCF1-8DF4-5C62-F7F4-708C2DA6C0D7"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="4BFFA063-0D5D-63F7-BD73-FBF73B367174">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="F292B114-09BF-A2D5-CD7C-2FB9BED5AE20">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A804401D-C725-3DD0-0F67-E508DD6D42C7" referredColumn="754C76E8-C42F-B93E-A883-6E30ABE0E1ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D7AF7F4-0CC6-C53E-F9EE-73381FDD6FF4" name="PROFESION_DETALLE_PK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 16:02:02 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E4C517F-4377-F5C2-B64A-286AB12DEEE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDD1BFA2-8A7A-DEAF-ECDE-000A382FDA51" name="TABLE_17_PROFESIONES_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D028BD8-D3A8-D1C5-24C3-8D091882456E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56775F23-DA4B-552D-3EDD-0551FAECFC6C" name="TABLE_17_EMPRESA_FK">
+<createdBy>u1151491</createdBy>
+<createdTime>2018-09-17 14:57:27 UTC</createdTime>
+<ownerDesignName>ProyectoVF</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F292B114-09BF-A2D5-CD7C-2FB9BED5AE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
